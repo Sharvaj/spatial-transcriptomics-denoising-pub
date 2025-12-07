@@ -1,0 +1,35 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatial-transcriptomics-denoising-pub"
+version = "0.0.1"
+authors = [
+  { name="Sharvaj Kubal", email="sharvajvk@gmail.com" },
+]
+description = "A Python package for denoising spatial transcriptomics data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "anndata",
+    "scanpy",
+    "scikit-learn",
+]
+
+[project.urls]
+Homepage = "https://github.com/Sharvaj/spatial-transcriptomics-denoising-pub"
+"Bug Tracker" = "https://github.com/Sharvaj/spatial-transcriptomics-denoising-pub/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
